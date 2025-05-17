@@ -1,8 +1,11 @@
 import axios from 'axios'
 import './App.css'
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap'
-
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 
 
@@ -38,8 +41,14 @@ function App() {
   return (
     <>
       <h1>Pokedex</h1>
-      <div className="card">
-
+      {/* <>
+        <Container>
+          <Row>
+            <Col>1 of 1</Col>
+          </Row>
+        </Container>
+      </> */}
+      
         <form onSubmit={handleSubmit}>
           <label htmlFor="pokemon">Enter Pokemon Name: </label>
           <input type="text" id="pokemon" placeholder='Pokemon' onChange={handleChange}  />
@@ -69,7 +78,7 @@ function App() {
         })}
            
         
-      </div>
+      
       
     </>
   )
